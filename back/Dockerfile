@@ -10,7 +10,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the server-side source code to the container
-COPY ./server .
+COPY . .
 
 # Set environment variables for the MongoDB connection
 ENV MONGO_URI mongodb+srv://hmissi22:Ah@123456789@cluster0.sdqzl5l.mongodb.net/Projet_fin?retryWrites=true&w=majority
